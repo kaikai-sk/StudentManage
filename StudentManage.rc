@@ -1,0 +1,372 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\StudentManage.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\StudentManage.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 StudentManage"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "StudentManage 1.0 版",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2014",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_STUDENTMANAGE_DIALOG DIALOGEX 0, 0, 534, 372
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "学生成绩管理系统"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,325,175,50,14
+    PUSHBUTTON      "取消",IDCANCEL,433,151,50,14
+    CONTROL         "List1",IDC_LIST_studentinfo,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_AUTOARRANGE | WS_BORDER | 
+                    WS_TABSTOP,7,7,317,183
+    PUSHBUTTON      "打开",IDC_BUTTON_open,325,7,50,14
+    PUSHBUTTON      "添加",IDC_BUTTON_add,433,7,50,14
+    PUSHBUTTON      "查找",IDC_BUTTON_find,325,31,50,14
+    PUSHBUTTON      "排序",IDC_BUTTON_sort,325,55,50,14
+    PUSHBUTTON      "保存",IDC_BUTTON_Save,433,31,50,14
+    PUSHBUTTON      "修改",IDC_BUTTON_Correct,433,127,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON_Delete,433,55,50,14
+    PUSHBUTTON      "统计",IDC_BUTTON_Statistic,433,79,50,14
+    PUSHBUTTON      "分析",IDC_BUTTON_SecStatistic,433,103,50,14
+    PUSHBUTTON      "清除全部",IDC_BUTTON_ClearAll,325,79,50,14
+    PUSHBUTTON      "模糊查询",IDC_BUTTON_MohuFind,325,103,50,14
+    PUSHBUTTON      "柱状图",IDC_BUTTON_Bar,325,127,50,14
+    PUSHBUTTON      "分数段查找",IDC_BUTTON_FenDuanSort,325,151,50,14
+    LTEXT           "图像显示如下：",IDC_STATIC_Text,384,171,143,36
+END
+
+IDD_DIALOG_Add DIALOG DISCARDABLE  0, 0, 189, 144
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "添加学生信息"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,132,42,50,14
+    PUSHBUTTON      "取消",IDCANCEL,132,69,50,14
+    LTEXT           "学号：",IDC_STATIC,21,21,25,8
+    LTEXT           "姓名：",IDC_STATIC,21,41,25,8
+    LTEXT           "数学：",IDC_STATIC,21,61,25,8
+    LTEXT           "物理：",IDC_STATIC,21,81,25,8
+    LTEXT           "英语：",IDC_STATIC,21,101,25,8
+    GROUPBOX        "学生信息",IDC_STATIC,15,7,41,120
+    EDITTEXT        IDC_EDIT_ID,57,19,60,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Name,57,40,60,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Math,56,61,62,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Phy,57,80,61,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Eng,57,101,61,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_Find DIALOG DISCARDABLE  0, 0, 275, 127
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "查找或修改"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,218,31,50,14
+    PUSHBUTTON      "取消",IDCANCEL,218,56,50,14
+    LTEXT           "要查找或修改的的学号：",IDC_STATIC,7,13,89,8
+    EDITTEXT        IDC_EDIT_ID,102,13,67,14,ES_AUTOHSCROLL
+    LTEXT           "姓名：",IDC_STATIC,7,37,25,8
+    EDITTEXT        IDC_EDIT_Name,102,37,55,14,ES_AUTOHSCROLL
+    LTEXT           "数学：",IDC_STATIC,7,61,25,8
+    EDITTEXT        IDC_EDIT_Math,102,60,40,14,ES_AUTOHSCROLL
+    LTEXT           "物理：",IDC_STATIC,7,85,25,8
+    EDITTEXT        IDC_EDIT_Phy,102,83,40,14,ES_AUTOHSCROLL
+    LTEXT           "英语：",IDC_STATIC,7,109,25,8
+    EDITTEXT        IDC_EDIT_Eng,102,106,40,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_Find_ID DIALOG DISCARDABLE  0, 0, 240, 61
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "要查找或修改或删除的学号："
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,183,7,50,14
+    PUSHBUTTON      "取消",IDCANCEL,183,40,50,14
+    LTEXT           "要查找或修改或删除的学号：",IDC_STATIC,13,26,105,8
+    EDITTEXT        IDC_EDIT_Find_ID,118,23,61,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_MohuFind DIALOG DISCARDABLE  0, 0, 187, 54
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "模糊查找"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,130,7,50,14
+    PUSHBUTTON      "取消",IDCANCEL,130,33,50,14
+    LTEXT           "姓名关键字：",IDC_STATIC,7,34,49,8
+    EDITTEXT        IDC_EDIT_KeyName,65,33,40,14,ES_AUTOHSCROLL
+    LTEXT           "学号关键字：",IDC_STATIC,7,7,49,8
+    EDITTEXT        IDC_EDIT_KeyID,65,7,40,14,ES_AUTOHSCROLL
+    LTEXT           "或：",IDC_STATIC,7,21,17,8
+END
+
+IDD_DIALOG_Bar DIALOG DISCARDABLE  0, 0, 144, 110
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "柱状图"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,87,37,50,14
+    PUSHBUTTON      "取消",IDCANCEL,87,54,50,14
+    GROUPBOX        "科目：",IDC_STATIC,7,7,73,96
+    CONTROL         "数学",IDC_RADIO_Math,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,25,33,32,10
+    CONTROL         "物理",IDC_RADIO_Phy,"Button",BS_AUTORADIOBUTTON,25,50,
+                    32,10
+    CONTROL         "英语",IDC_RADIO_Eng,"Button",BS_AUTORADIOBUTTON,25,67,
+                    32,10
+END
+
+IDD_DIALOG_FenDuanFind DIALOG DISCARDABLE  0, 0, 217, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "分段查找"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,160,29,50,14
+    PUSHBUTTON      "取消",IDCANCEL,160,46,50,14
+    CONTROL         "数学",IDC_RADIO_Math,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,19,20,32,10
+    CONTROL         "物理",IDC_RADIO_Phy,"Button",BS_AUTORADIOBUTTON,19,33,
+                    32,10
+    CONTROL         "英语",IDC_RADIO_Eng,"Button",BS_AUTORADIOBUTTON,19,46,
+                    32,10
+    CONTROL         "总分",IDC_RADIO_Sum,"Button",BS_AUTORADIOBUTTON,19,59,
+                    32,10
+    GROUPBOX        "分数段：",IDC_STATIC,7,7,57,84
+    LTEXT           "最大值：",IDC_STATIC,73,53,33,8
+    EDITTEXT        IDC_EDIT_Max,108,54,40,14,ES_AUTOHSCROLL
+    LTEXT           "最小值：",IDC_STATIC,71,27,33,8
+    EDITTEXT        IDC_EDIT_Min,105,26,40,14,ES_AUTOHSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "StudentManage Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "StudentManage\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2014\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "StudentManage.EXE\0"
+            VALUE "ProductName", "StudentManage 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_STUDENTMANAGE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 527
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 354
+    END
+
+    IDD_DIALOG_Add, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 182
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 137
+    END
+
+    IDD_DIALOG_Find, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 268
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_DIALOG_Find_ID, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 233
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 54
+    END
+
+    IDD_DIALOG_MohuFind, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 47
+    END
+
+    IDD_DIALOG_Bar, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 137
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_DIALOG_FenDuanFind, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 StudentManage(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\StudentManage.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
